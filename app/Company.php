@@ -8,7 +8,7 @@ class Company extends Model
 {
     protected $table = 'companies';
     
-    public function project()
+    public function projects()
     {
 		return $this->hasMany(\App\Project::class);
 	}
